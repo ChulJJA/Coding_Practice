@@ -1,12 +1,5 @@
 {
-    "files.associations": {
-        "initializer_list": "cpp",
-        "list": "cpp",
-        "utility": "cpp",
-        "vector": "cpp",
-        "xhash": "cpp",
-        "xstring": "cpp",
-        "xutility": "cpp",
-        "iostream": "cpp"
-    }
+  "files.associations": {
+    "vector": "cpp"
+  }
 }
