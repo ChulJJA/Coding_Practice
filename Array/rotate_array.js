@@ -22,18 +22,16 @@ Constraints:
 -231 <= nums[i] <= 231 - 1
 0 <= k <= 105
  */
-
+"use strict";
 /**
  * @param {number[]} nums
  * @param {number} k
  */
 var rotate = function (nums, k) {
-  for (let i = 0; i < k; i++) {
-    nums.pop();
-    nums.push()
-  }
+  k %= nums.length;
+  nums.unshift(...nums.splice(nums.length - k), k);
 };
 
-arr = [1, 2, 3, 4, 5, 6, 7];
+let arr = [1, 2, 3, 4, 5, 6, 7];
 rotate(arr, 3);
 console.log(arr); // [5,6,7,1,2,3,4]
